@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{%block head%}{%endblock%}
+
+{%block body%}
+<div>
+    {%if fail%}
+    <p style="text-align: center;">Username or Password are uncorrect please try again : </p>
+    {%endif%}
+    <form method="POST">
+        <ol id="loginform">
+            <li>Username : <input type="text" name="username"></p>
+            <li>Password : <input type="text" name="password"></p>
+            <li><input type="submit" value="submit"></li>
+        </ol>
+    </form>
+</div>
+
+
+
+
+
+{%endblock%}

@@ -1,0 +1,38 @@
+
+{% extends 'base.html' %}
+
+
+
+{%block body%}
+    <script type="text"></script>
+    <div>
+        <table>
+            {% for row in board.board %}
+            <tr>
+                {% for piece in row %}
+                        {% if piece.id != 3 and piece.move(board.board) != [] and piece.id == turn %}
+                            <td id={{piece.color}}>
+                                <a onclick="add_Var_To_Url('{{piece.pos[0]}}{{piece.pos[1]}}')">
+                                    <div class="cell"><img src="{{url_for('static', filename='chess_pieces/'+piece.name+'_'+piece.strId+'.png')}}" alt="{{piece.name}}{{piece.id}}" /></div>
+                                </a>
+                            </td>
+                        
+                        {% else %}
+                            <td id={{piece.color}}>
+                                <div><img src="{{url_for('static', filename='chess_pieces/'+piece.name+'_'+piece.strId+'.png')}}" alt="" /></div> 
+                                
+                            </td>
+                        {% endif %}   
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+    <script>
+        function add_Var_To_Url(variableName) {
+            console.log(variableName)
+          var url = "/get_moves/" + variableName;
+            window.location.href = url;
+        }
+      </script>
+{%endblock%}

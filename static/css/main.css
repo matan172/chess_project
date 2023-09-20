@@ -1,0 +1,317 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+    color: black;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+    border-style: solid;
+    margin: 0px auto; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    display:block;
+    text-decoration:none;
+    align-self: center;
+    margin: 0px auto; 
+    padding: auto;
+    border: none;
+}
+
+th {
+    height: 100px;
+
+}
+
+td {
+    align-self: center;
+    height: 50px;
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 30%;
+}
+
+h2 {
+    background-color: chartreuse;
+}
+
+.center {
+    margin: 0px auto; 
+  }
+
+
+#black {
+    background-color:grey;
+}
+
+#white {
+    #black {
+        background-color:grey;
+    }
+    
+}
+
+.game {
+    padding-top: 50px;
+    border: none;
+    margin: auto;
+    top: 50%;
+    width: 45%;
+
+}
+
+
+#getmoves {
+    background-color: lightgreen;
+}
+
+#leftmenu{
+    padding: 20px;
+    margin: 20px;
+    background-color: lightblue;
+    text-decoration: none;
+
+}
+#rightmenu{
+  padding: 20px;
+  margin: 20px;
+  background-color: lightblue;
+  text-decoration: none;
+
+}
+#left {
+    float: left;
+}
+
+
+
+right {
+    float: right;
+    
+}
+
+
+
+#topstripe {
+    margin-top: 0%;
+    background-color: rgb(126, 100, 65);
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#menuitem {
+    font-size: xx-large;
+    text-decoration: none;
+    
+
+}
+.cell {
+  height: 100%; width: 100%;
+}
+
+
+
+
+
+
+/* copied css  */ 
+html, body{
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:100%;
+  }
+*{
+    margin:0px;
+    padding:0px;  
+  }
+.main{
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:100%;
+    background-image:url("https://thehighdefinitionwallpapers.com/wp-content/uploads/2020/03/FoodsPizzaDelicious-and-testy-pizza-fast-food-HD-wallpaper-1920x1080.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color:silver;*/
+  }
+ul{
+    margin:0px;
+    padding:0px;  
+  }
+details{
+  width:0px;
+  background-color:#555;  
+  left:0px;
+  top:0px;
+  position:fixed;
+  transition: 0.5s;
+  z-index:1;
+  }
+summary{
+  width:250px;
+  height:50px;
+  background-color:#555;  
+  font-size:1.5em;
+  text-align:left;
+  list-style-type: none;
+  line-height:50px;
+  cursor:pointer;
+  padding:0px 0px 0px 25px;
+  }
+summary span{
+  color:#FF6347;  
+  margin:0px 0px 0px 25px;
+  font-style:italic;
+  font-family:Brush Script MT;
+  font-size:1.5em;
+  }
+summary img{
+  width:100px;
+  height:100px; 
+  float:right;
+  transition: 0.5s;
+  margin:10px 25px 0px 0px;
+  }
+details[open]{
+  width:30%;
+  height:100%;
+  background-color:#555;  
+  }
+details[open] summary{
+  width:180px;
+  }
+details[open] summary img{
+  width:50px;
+  height:50px;  
+  float:right;
+  margin:0px;
+  }
+ul li{
+  list-style:none;
+  }
+ul li a{
+  text-decoration:none; 
+  background-color: ;
+  color:#999;
+  display:block;
+  padding:1em;
+  width:100%;
+  font-size:1.5em;
+  text-align:left;
+  border-bottom:1px solid #333;
+  border-top:1px solid #333;
+  box-sizing: border-box; 
+  margin-top:-px;
+  }
+
+  
+  
+ul li:hover{
+  background-color:#333;  
+  border-bottom:1px solid #333; 
+  }
+.content{
+  width:100%; 
+  height:100%;  
+  transition: 0.5s;
+  overflow:scroll;
+  overflow-x:hidden;
+  position:absolute;
+  right:0px;
+  top:0px;
+  }
+.space{
+  width:100%; 
+  height:5%;  
+  margin:0em;
+  }
+details[open]+.content{
+  width:70%;  
+  height:100%;  
+  transition: 0.5s;
+  }
+h1{
+  text-align:center;
+  color:#FF6347;
+  font-size:4em;
+  line-height:2em;
+  font-style:italic;
+  font-family:Brush Script MT;
+  margin:0px 0px 0px 0px;
+  }
+h2{
+  text-align:center;
+  color:white;
+  font-size:2em;
+  font-weight:bold;
+  font-family:sans-serif;
+  margin:0px 0px 0px 0px;
+  border-bottom:1px solid #f4deda;
+  background-color:#FF6347;
+  }
+.section{
+  width:90%;
+  height:90%;
+  background-color:white;
+  margin:0px auto;
+  box-shadow:0px 0px 2px 0px gray;
+  border-radius :5px;
+  }
+.scroll{
+  height:100%;  
+  overflow-x:scroll;  
+  margin:0px;
+  padding:0.1em 0em 0em 0em;
+  }
+
+
+
+#logo {
+    
+    text-align:center;
+  color:#1f0b08;
+  font-size:3em;
+  line-height:2em;
+  font-style:italic;
+  font-family:Brush Script MT;
+  margin:0px 0px 0px 0px;
+  background-color: rgb(123, 218, 123);
+  
+
+
+}
+
+#loginform {
+    list-style-type: none;
+    margin-left: 30%;
+}
+
+#profile {
+  float: right;
+}
+
+
+.pieces {
+  image-resolution: from-image 10dpi;
+  scale: 100%;
+}

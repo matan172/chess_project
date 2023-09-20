@@ -1,0 +1,9 @@
+{%extends "base.html"%}
+
+{%block body%}
+    <ol>
+    {% for i in session['user'] %}
+        <li><input type="text" name="" placeholder="{{i}}"></li>
+    {%endfor%}</ol>
+    <h1><a href="/logout"> logout</a></h1>
+{%endblock%}

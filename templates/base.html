@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <head><h3 id="logo">ChessGame by matan</h3></head>
+</head>
+<body>
+    <div id="left">
+        <div id="main">
+        <ul>
+            <li id="leftmenu"><a href="/"> New Game</a></li>
+            {%if 'user' not in session%}
+                <li id="leftmenu"><a href="/login">Login</a></li>
+                <li id="leftmenu"><a href="/register"> Register</a></li>  
+            {%else%}
+                <li id="leftmenu"><a href="/user">Profile</a></li>
+            {%endif%}
+            <li id="leftmenu"><a href="/rules"> Rules</a></li>  
+        </ul>
+        </div>
+    </div>
+    {%if 'user' in session%}
+    <div id="profile"> 
+        <div id="profile">
+        <h3>{{ session['user'][0] }}</h3>
+        <h3>{{ session['user'][5] }}</h3>
+        <p></p>
+        </div>
+    </div>
+    {%endif%}
+
+    
+    <div class="game"> 
+        <div>
+            {%block body%}{%endblock%}
+        <div>
+    </div>
+
+</body>
+</html>
